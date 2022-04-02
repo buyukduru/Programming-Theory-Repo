@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     public float playerSpeed;
     private Rigidbody rigidBody;
 
-    private int points = 0;
-    private bool gameOver =false;
+    
+  
     private float fallingDistance =-20.0f;
 
     [SerializeField]
@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     {
         if (transform.position.y< fallingDistance)
         {
-            gameOver = true;
+            
           
      gameOverText.GetComponent<Text>().enabled = true;
           
@@ -56,8 +56,9 @@ public class PlayerController : MonoBehaviour
             ScoreScript.scoreValue += 10;
 
             Destroy(collision.gameObject);
-            Debug.Log("10 Points");
+          
         }
+     
     }
    
 

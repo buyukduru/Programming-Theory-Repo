@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class BaseShape
+public abstract class BaseShape : MonoBehaviour
 {
-    public int points;
-    public string tagName;
+    // ABSTRACTION 
+    public abstract void typeOfShape();
 
-    public void ShapeType()
-    {
-        Debug.Log("This is a BaseShaep");
-    }
+   
+    
+
+
 }
